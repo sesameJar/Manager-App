@@ -18,7 +18,35 @@
 }
 
 body, html {
-	font-family     : "Helvetica Neue",sans-serif;
-	box-shadow      : 0 none;
-	background-color: rgb(192,163,52)
+	font-family      : "Helvetica Neue",sans-serif;
+	box-shadow       : 0 none;
+	background-color : rgb(192,163,52)
+}
+
+div.player{
+
+}
+
+div.player button {
+	width            : 32px;
+	height           : 32px;
+	float            : right;
+	background-color : transparent;
+	border           : 0 none;
+}
+
+div.player button#stop{
+	background-image : url('images/stop-32.png')
+}
+
+div.player button#play{
+	background-image : url('images/play-32.png')
+}
+
+div.player button#next{
+	background-image : url('images/right-32.png')
+}
+
+div.player button#pre{
+	background-image : url('images/left-32.png')
 }
