@@ -35,6 +35,10 @@ div.player button {
 	border           : 0 none;
 }
 
+div.player button:focus{
+	outline:0 none;
+}
+
 div.player button#stop{
 	background-image : url('images/stop-32.png')
 }
