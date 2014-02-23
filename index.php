@@ -11,13 +11,25 @@
 <body>
 	<div class="container">
 		<div class="player">
-			<audio src="" autoplay="autoplay" controls="controls">
+			<audio src="" autoplay="autoplay">
 				Your browser does not support the audio element.
 			</audio>
 			<div class="songlist">
-				<a href="music/Lawrence.mp3" title=""></a>
-				<a href="music/Seat with me.mp3" title=""></a>
-				<a href="music/07 Still Loving You.mp3" title=""></a>
+				<?php 
+
+				$songs_path = "./music" ;
+				$songs      = scandir($songs_path);
+
+				foreach( $songs as $song ) {
+
+					$song_type = strtolower( end( explode( '.' , $song ) ) );
+
+					if( $song_type == 'mp3' ) {
+
+						echo "<a href='$songs_path/$song'></a>";
+					}
+				}
+			?>
 			</div>
 			<button id="next"></button>
 			<button id="play"></button>

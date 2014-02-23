@@ -7,12 +7,12 @@ $(function () {
 		playAudio = $('button#play'),
 		currentSong=0;
 
-		(play =function(n){
-			if(n>songs.length-1) n=0;
-			if(n<0) n=songs.length-1;
-			player.attr('src',songs.eq(n).attr('href'));
-			currentSong=n;
-		})(0);
+	(play =function(n){
+		if(n>songs.length-1) n=0;
+		if(n<0) n=songs.length-1;
+		player.attr('src',songs.eq(n).attr('href'));
+		currentSong=n;
+	})(0);
 
 	nextAudio.click(function(){
 		play(currentSong+1);
