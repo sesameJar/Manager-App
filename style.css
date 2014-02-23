@@ -1,0 +1,24 @@
+.clear{
+	clear      : both;
+	overflow   : hidden;
+	width      : 0 !important;
+	height     : 0 !important;
+	min-height : 0 !important;
+	min-width  : 0 !important;
+	border     : 0 none !important;
+	float      : none !important;
+}
+
+.container{
+	width            : 950px;
+	background-color : none;
+	margin           : 0 auto;
+	padding-top      : 1px;
+	min-height       : 500px;
+}
+
+body, html {
+	font-family     : "Helvetica Neue",sans-serif;
+	box-shadow      : 0 none;
+	background-color: rgb(192,163,52)
+}
